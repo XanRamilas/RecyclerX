@@ -23,7 +23,7 @@ Currently, you can install a library in your project in the following way: downl
 ### Installing using Gradle
 1. Copy the **recyclerx** directory to your project.
 2. Locate a file **settings.gradle**.  
-![tutorial_1.png](https://bitbucket.org/repo/ypjGkpy/images/623732846-tutorial_1.png)
+![](tutorial/tutorial_1.png)
 	* The file code might look something like this:  
 	```include ':app'```
 	* Declare the module **recyclerx** in this file:  
@@ -31,11 +31,11 @@ Currently, you can install a library in your project in the following way: downl
 3. Now the **recyclerx** module is implemented in your project. It remains to add a dependency on it.
 	* Select the module to which the dependency to **recyclerx** should be connected. For example, this is the ```app``` module.
 	* Find the **build.gradle** module (not the **build.gradle** project), to which you are connecting the dependency.
-	![tutorial_2.png](https://bitbucket.org/repo/ypjGkpy/images/4100770009-tutorial_2.png)
+	![](tutorial/tutorial_2.png)
 	* Add to **dependencies** the following line:  
 	```implementation project(':recyclerx')```
 	* **dependencies** of the module where you have added the dependency to **recyclerx** might look line:  
-	![tutorial_3.png](https://bitbucket.org/repo/ypjGkpy/images/59272989-tutorial_3.png)
+	![](tutorial/tutorial_3.png)
 4. Done!
 
 ## Fast start
