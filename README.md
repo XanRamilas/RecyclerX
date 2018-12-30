@@ -1,5 +1,4 @@
 # Recycler X: Expandable RecyclerView for Android with one level of the nesting
-___
 This is a small library that allows you to create drop-down lists for **Android** applications with one nesting level inside **RecyclerView**.
 
 ### Version 1.x
@@ -17,7 +16,6 @@ This is a small library that allows you to create drop-down lists for **Android*
 ![](https://media.giphy.com/media/cGu1uphaea8Ksph0ZD/giphy.gif)
 
 ## Installation
-___
 Currently, you can install a library in your project in the following way: download this repository and embed a **recyclerx** module into your project. Installation using Maven Central will be available soon.
 
 ### Installing using Gradle
@@ -39,7 +37,6 @@ Currently, you can install a library in your project in the following way: downl
 4. Done!
 
 ## Fast start
-___
 
 1) As in a usual **ReyclerView**, first you need to create a ```RecyclerView.ViewHolder```. To do this, simply inherit from a ```BaseViewHolder<T>``` class.  
 Example:  
@@ -173,7 +170,6 @@ You probably have questions. Therefore, in order to better understand how to use
 * Telegram: @vfirsov
 
 ## LICENSE
-___
 ```
 Copyright © 2018, Vadim Firsov.  
 
