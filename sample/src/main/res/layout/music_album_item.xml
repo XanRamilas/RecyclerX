@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10dp">
+
+    <ImageView
+        android:id="@+id/music_album_item_cover_image_view"
+        android:layout_width="@dimen/dimen_75dp"
+        android:layout_height="@dimen/dimen_75dp"/>
+
+    <TextView
+        android:id="@+id/music_album_item_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_toEndOf="@+id/music_album_item_cover_image_view"
+        android:layout_toLeftOf="@+id/music_album_item_buy_image_view"
+        android:layout_toRightOf="@+id/music_album_item_cover_image_view"
+        android:layout_toStartOf="@+id/music_album_item_buy_image_view"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:text="Some Album Name"/>
+
+    <ImageView
+        android:id="@+id/music_album_item_buy_image_view"
+        android:layout_width="@dimen/dimen_36dp"
+        android:layout_height="@dimen/dimen_36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_info_black_vector"/>
+
+</RelativeLayout>
