@@ -43,7 +43,7 @@ ___
 
 1) As in a usual **ReyclerView**, first you need to create a ```RecyclerView.ViewHolder```. To do this, simply inherit from a ```BaseViewHolder<T>``` class.  
 Example:  
-```
+```java
 MyAwesomeViewHolder extends BaseViewHolder<MyAwesomeEntity>
 
 @Override
@@ -54,7 +54,7 @@ public void bindViewHolderWithEntity(@Nullable MyAwesomeEntity entity) {
 
 2) Then create a class that will bind the data to the view. To do this, inherit from the ```BaseViewHolderBinder<T>``` class.  
 Example:  
-```
+```java
 MyAwesomeViewHolderBinder extends BaseViewHolderBinder<MyAwesomeEntity>
 
 	@Override
@@ -67,7 +67,7 @@ MyAwesomeViewHolderBinder extends BaseViewHolderBinder<MyAwesomeEntity>
 3) Next, you need to impelemnt interfaces ```ViewHolderFactory``` and ```ViewHolderBinderFactory<B extends BaseViewHolderBinder, T>```.  
 3.1 ```ViewHolderFactory``` acts as a factory for creating **RecyclerView.ViewHolder**. So, for our ```MyAwesomeViewHolder```, we need to implement the interface that our **ViewHolder** will create.  
 Example:  
-```
+```java
 MyAwesomeViewHolderFactory implemets ViewHolderFactory {
 
 	@Override
@@ -79,7 +79,7 @@ MyAwesomeViewHolderFactory implemets ViewHolderFactory {
 ```
 3.2 ```ViewHolderBinderFactory<B extends BaseViewHolderBinder, T>``` is a binder creating factory.  
 Example:  
-```
+```java
 MyAwesomeViewHolderBinderFactory implements ViewHolderBinderFactory<MyAwesomeViewHolder, MyAwesomeEntity> {
 
 	private static final int VIEW_TYPE = R.layout.my_awesome_layout_item;
@@ -99,7 +99,7 @@ MyAwesomeViewHolderBinderFactory implements ViewHolderBinderFactory<MyAwesomeVie
 4) After that you need to implement a ```Dispatcher<B extends BaseViewHolderBinder, T, F extends ViewHolderBinderFactory>``` interface.
 The implementation of this interface will allow you to create a mechanism by which you can automatically determine which ViewHolderBinder you need for a specific model (entity).  
 Example:  
-```
+```java
 MyAwesomeDespatcher implements Dispatcher<MyAwesomeViewHolderBinder, MyAwesomeEntity, MyAwesomeViewHolderBinderFactory> {
 
  @Override
@@ -132,7 +132,7 @@ The example that I am demonstrating now is a simple list of one delegate without
 6) So, the penultimate stage of creating a list and transferring it to the outside becomes the implementation of an aggregator. The aggregator collects all the delegates of the sections, which there might be, and sends this information to **RecyclerView.Adapter**.
 In order to create an aggregator, inherit from the ```BaseSectionAggregator``` class and implement two methods.  
 Example:  
-```
+```java
 @Override
 Map<Integer, ViewHolderFactory> createViewHolderFactories() {
 	Map<Integer, ViewHolderFactory> factories = new HashMap<>();
@@ -158,7 +158,7 @@ List<BaseViewHolderBinder> createViewHolderBinders() {
 
 7) Finally, create an instance of a ```RecyclerXAdapter``` class. You can actually use ```RecyclerXAdapter``` out of the box, or inherit from it, or create your own from scratch.  
 Example:  
-```
+```java
 RecyclerXAdapter myAwesomeAdapter = new RecyclerXAdapter(mMyAwesomeSectionAggregator);
 mRecyclerView.setAdapter(myAwesomeAdapter);
 ```
@@ -170,7 +170,7 @@ You probably have questions. Therefore, in order to better understand how to use
 ## LICENSE
 ___
 ```
-Copyright © 2018, Vadim Firsov.  
+Copyright Â© 2018, Vadim Firsov.  
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
