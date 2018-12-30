@@ -167,6 +167,11 @@ That's all! You are well done in passing difficult training! :-)
   
 You probably have questions. Therefore, in order to better understand how to use **recyclerx** in practice, I recomended to look at **sample**, that you can find in this repository.
 
+### Contact with me
+* Facebook: https://www.facebook.com/vadim.firsov.77
+* VK: https://vk.com/vad1m69
+* Telegram: @vfirsov
+
 ## LICENSE
 ___
 ```
