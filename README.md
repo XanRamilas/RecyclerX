@@ -171,7 +171,7 @@ You probably have questions. Therefore, in order to better understand how to use
 
 ## LICENSE
 ```
-Copyright © 2018, Vadim Firsov.  
+Copyright © 2018 - 2019, Vadim Firsov.  
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
