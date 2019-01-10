@@ -36,7 +36,7 @@ Currently, you can install a library in your project in the following way: downl
 	![](tutorial/tutorial_3.png)
 4. Done!
 
-## Fast start
+## Quick start
 
 1) As in a usual **ReyclerView**, first you need to create a ```RecyclerView.ViewHolder```. To do this, simply inherit from a ```BaseViewHolder<T>``` class.  
 Example:  
